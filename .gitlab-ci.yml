@@ -7,7 +7,7 @@ before_script:
   - id
 
 after_script:
-  - echo "After script section"
+  - echo "After script section 1"
   - echo "For example you might do some cleanup here"
 
 build1:
