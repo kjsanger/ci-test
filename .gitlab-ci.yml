@@ -1,0 +1,28 @@
+image: wsinpg/ub-16.04-irods-4.2.7:1.1
+
+before_script:
+  - echo "Before script section"
+  - pwd
+  - id
+
+after_script:
+  - echo "After script section"
+  - echo "For example you might do some cleanup here"
+
+build1:
+  stage: build
+  script:
+    - echo "Do your build here"
+
+test1:
+  stage: test
+  script:
+    - echo "Do a test here"
+    - echo "For example run a test suite"
+
+#test2:
+#  stage: test
+#  script:
+#    - echo "Do another parallel test here"
+#    - echo "For example run a lint test"
+#    - echo "Do your deploy here"
